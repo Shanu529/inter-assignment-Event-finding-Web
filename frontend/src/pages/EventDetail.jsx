@@ -34,13 +34,11 @@ export default function EventDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-200 py-10 px-4">
+    <div className="min-h-screen bg-gray-950 text-gray-200 py-10 px-4 my-14">
       <div className="max-w-2xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 p-8 relative overflow-hidden">
         
-        {/* Background Glow Effect */}
         <div className="absolute inset-0 bg-linear-to-br from-cyan-800/10 via-transparent to-blue-800/10 rounded-2xl pointer-events-none"></div>
 
-        {/* Back Button */}
         <Link
           to="/"
           className="absolute top-5 left-5 text-gray-400 hover:text-cyan-400 flex items-center gap-1 text-sm transition-all duration-300"
@@ -48,7 +46,6 @@ export default function EventDetail() {
           <ArrowLeft className="w-4 h-4" /> Back
         </Link>
 
-        {/* Event Title */}
         <h2 className="text-3xl font-extrabold text-cyan-400 mb-3 mt-10">
           {event.title || "Untitled Event"}
         </h2>
