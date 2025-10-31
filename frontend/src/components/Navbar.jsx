@@ -1,5 +1,3 @@
-
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -8,11 +6,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-gray-900 border-b border-gray-800 text-lg shadow-md fixed top-0 left-0 z-50">
+    <nav className="w-full bg-black border-b border-gray-800 text-lg shadow-md fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
-        
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="text-3xl transition-transform duration-300 group-hover:rotate-12">📅</span>
+          <span className="text-3xl transition-transform duration-300 group-hover:rotate-12">
+            📅
+          </span>
           <h2 className="font-extrabold text-xl text-cyan-400 tracking-wide group-hover:text-cyan-300 transition-all duration-300">
             Eventify
           </h2>
@@ -21,7 +20,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-4 items-center">
           <Link
             to="/create"
-            className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-xl shadow-md hover:shadow-cyan-500/30 transition-all duration-300"
+            className="px-4 py-2 bg-cyan-90text-gray-300 hover:text-white border border-gray-700 hover:border-cyan-500 text-white font-medium rounded-xl shadow-md hover:shadow-cyan-500/30 transition-all duration-300"
           >
             Create Event
           </Link>
@@ -30,7 +29,7 @@ export default function Navbar() {
             Sign In
           </button>
 
-          <button className="px-4 py-2 bg-linear-to-br from-cyan-600 to-blue-500 hover:from-cyan-500 hover:to-blue-400 text-white font-semibold rounded-xl shadow-md hover:shadow-cyan-400/30 transition-all duration-300">
+          <button className="px-4 py-2 bg-linear-to-br bordertext-gray-300 hover:text-white border border-gray-700 hover:border-cyan-500 text-white font-semibold rounded-xl shadow-md hover:shadow-cyan-400/30 transition-all duration-300">
             Sign Up
           </button>
         </div>

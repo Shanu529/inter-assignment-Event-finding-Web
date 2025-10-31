@@ -4,7 +4,7 @@ import { MapPin, CalendarDays, Users } from "lucide-react";
 
 export default function EventCard({ event = {} }) {
   return (
-    <div className="bg-gray-900 border border-gray-800 rounded-2xl shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 p-6 group">
+    <div className="bg-black border-3 border-cyan-950 rounded-2xl shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 p-6 group">
       {/* Title */}
       <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
         {event.title || "Untitled Event"}
@@ -36,7 +36,7 @@ export default function EventCard({ event = {} }) {
       <div className="mt-4">
         <Link
           to={`/event/${event._id}`}
-          className="block text-center bg-linear-to-br from-cyan-600 to-blue-500 hover:from-cyan-500 hover:to-blue-400 text-white font-medium py-2.5 rounded-xl shadow-md hover:shadow-cyan-500/30 transition-all duration-300"
+          className="block text-center bg-linear-to-br from-cyan-950  hover:from-cyan-500  text-white font-medium py-2.5 rounded-xl shadow-md hover:shadow-cyan-500/30 transition-all duration-300"
         >
           View Details
         </Link>

@@ -7,6 +7,7 @@ import CreateEvent from "./pages/CreateEvent";
 import { Toaster } from "react-hot-toast";
 import EventDetail from "./pages/EventDetail";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/event/:id" element={<EventDetail />} />
           <Route path="/create" element={<CreateEvent />} />
         </Routes>
+        <Footer />
 
         
       </BrowserRouter>
