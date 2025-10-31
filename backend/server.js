@@ -11,7 +11,7 @@ const app = express();
 
 
 const allowedOrigins = [
-  "https://findmyevent-coral.vercel.app/",
+  "https://findmyevent-coral.vercel.app",
   "http://localhost:5173",
 ];
 
