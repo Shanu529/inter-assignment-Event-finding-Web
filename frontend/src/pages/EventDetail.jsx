@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
@@ -13,13 +11,18 @@ export default function EventDetail() {
     const fetchEvent = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/v1/event/get-event/${id}`
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/event/get-event/${id}`
         );
         setEvent(res.data.event);
       } catch (err) {
         console.error("Error fetching event:", err);
       }
     };
+
+    console.log(
+      `${import.meta.env.VITE_BACKEND_URL}/api/v1/event/get-event/${id}`
+    );
+
     fetchEvent();
   }, [id]);
 
@@ -36,7 +39,6 @@ export default function EventDetail() {
   return (
     <div className=" bg-black text-gray-200 py-10 px-4 pt-32">
       <div className="max-w-2xl mx-auto bg-black border border-gray-800 rounded-2xl shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 p-8 relative overflow-hidden">
-        
         <div className="absolute inset-0 bg-linear-to-br from-cyan-800/10 via-transparent to-blue-800/10 rounded-2xl pointer-events-none"></div>
 
         <Link
