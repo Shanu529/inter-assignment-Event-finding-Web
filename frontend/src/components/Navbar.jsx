@@ -9,9 +9,7 @@ export default function Navbar() {
     <nav className="w-full bg-black border-b border-gray-800 text-lg shadow-md fixed top-0 left-0 z-50">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="text-3xl transition-transform duration-300 group-hover:rotate-12">
-            📅
-          </span>
+          
           <h2 className="font-extrabold text-xl text-cyan-400 tracking-wide group-hover:text-cyan-300 transition-all duration-300">
             Eventify
           </h2>
